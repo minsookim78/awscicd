@@ -1,0 +1,4 @@
+resource "aws_key_pair" "sshkey" {
+  key_name   = "user05-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUxyiSpkNTMSNdE2NRGr6xErKQcsl0YEi06W9jBtiXuPY4himyol3emFPU220KeCGGX1H1vA3RK2KxzDxSbbyRkAIxThVa+ObG68URFXGBGYMKSVWOOr3iVzJH3ueY7/RXghg0lMYmZmJbIwaVZVN0nlUCdpM3pYK6d34K6KhyoZFj9SM6KDRIU6Mky1mnVqcJ+8jKIAlJYR0l9oPgkW6TStrmuE4kDuEPGzdlpCi0TrTmTnz9Uj7Xdd2wQ2aBGl0A46Opw6FMmPs9fhQTJLc2Jmw8R6LcDH/nu5lGsq9m/R9n5mnEpmQP2T/o0d6SOJAse0TY1DA9WosANwL3lyWH ec2-user@ip-172-31-38-163"
+}
