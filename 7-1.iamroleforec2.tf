@@ -1,5 +1,5 @@
-resource "aws_iam_role" "test_role" {
-  name = "test_role"
+resource "aws_iam_role" "user05_role" {
+  name = "user05_role"
 
   assume_role_policy = <<EOF
 {
@@ -23,16 +23,16 @@ EOF
 }
 
 
-resource "aws_iam_instance_profile" "test_profile" {
-  name = "test_profile"
-  role = "${aws_iam_role.test_role.name}"
+resource "aws_iam_instance_profile" "user05_profile" {
+  name = "user05_profile"
+  role = "${aws_iam_role.user05_role.name}"
 }
 
 
 
-resource "aws_iam_role_policy" "test_policy" {
-  name = "test_policy"
-  role = "${aws_iam_role.test_role.id}"
+resource "aws_iam_role_policy" "user05_policy" {
+  name = "user05_policy"
+  role = "${aws_iam_role.user05_role.id}"
 
   policy = <<EOF
 {
