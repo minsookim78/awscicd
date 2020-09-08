@@ -50,7 +50,7 @@ resource "aws_iam_role_policy" "user05_policy" {
         "s3:*",
         "elasticloadbalancing:*"
         ],
-      "Resource" : "*"
+      "Resource" : "*"                         #<-- 요기에 해당 S3버킷ID 등록하거나 세분화 해야 함..
     }   
         
   ]
