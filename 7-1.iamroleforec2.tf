@@ -44,9 +44,6 @@ resource "aws_iam_role_policy" "user05_policy" {
         "autoscaling:*",
         "codedeploy:*",
         "ec2:*",
-        "cloudformation:DescribeStackResources",
-        "ec2:DescribeInstances",
-        "ec2:DescribeInstanceStatus",
         "s3:*",
         "elasticloadbalancing:*"
         ],
